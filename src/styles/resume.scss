@@ -1,0 +1,9 @@
+@import "../node_modules/bulma/sass/helpers/color.sass";
+
+.subtitle a {
+    color: $primary-dark
+}
+
+.subtitle a:hover {
+    color: $primary
+}

@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Sidebar } from '../components';
+import { Resume } from '../components';
 
-class Home extends Component {
-    render() {
-        return (
-            <div>
-                <h1>HOME</h1>
+const Home = () => {
+    return (
+        <div className="container">
+            <div className="columns is-gapless">
+                <div className="column">
+                    <Resume />
+                </div>
+                <div className="column is-one-quarter">
+                    <Sidebar />
+                </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Home;

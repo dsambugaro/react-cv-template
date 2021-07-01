@@ -1,0 +1,34 @@
+@import "../node_modules/bulma/sass/helpers/color.sass";
+@import "../node_modules/bulma/sass/utilities/functions.sass";
+
+.sidebar {
+    color: findColorInvert($primary);
+    background-color: $primary;
+    height: 100vh;
+
+}
+
+.side-head {
+    background-color: $primary-dark;
+    padding: 2rem;
+}
+
+.side-head .title {
+    color: findColorInvert($primary-dark);
+}
+
+.side-body .title {
+    color: findColorInvert($primary);
+}
+
+.side-head .subtitle, .side-body .subtitle {
+    color: $grey-lighter
+}
+
+.side-footer, .side-body {
+    padding: 1.2rem;
+}
+
+.flag {
+    margin: 5px;
+}

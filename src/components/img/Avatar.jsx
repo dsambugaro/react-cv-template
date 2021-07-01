@@ -1,9 +1,16 @@
-import React, { Component } from 'react'
+import React from "react";
 
-class Avatar extends Component {
-    render() {
-        return <h2>Avatar</h2>;
-    }
+const Avatar = (props) => {
+    const {size = 128, circle = true, src, alt} = props;
+    return (
+        <figure className={`image is-${size}x${size}`}>
+            <img
+                className={circle ? 'is-rounded' : ''}
+                src={src}
+                alt={alt}
+            />
+        </figure>
+    );
 }
 
 export default Avatar;

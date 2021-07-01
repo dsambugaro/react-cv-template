@@ -1,7 +1,8 @@
-import './App.css';
-import { Home } from './pages';
+import { Home } from "./pages";
+import "./App.scss";
+import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
-function App() {
+const App = () => {
     return (
         <Home />
     );
